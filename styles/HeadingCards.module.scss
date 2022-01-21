@@ -1,0 +1,61 @@
+.row {
+  display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.card_box_1 {
+  background-color: #14a8dd;
+  width: 45%;
+  display: flex;
+  box-shadow: 0 1.5rem 4rem rgba(black, $alpha: 0.15);
+  align-items: center;
+  text-align: left;
+  min-height: 25vh;
+}
+.card_box_2 {
+  background-color: #e6646b;
+  width: 45%;
+  display: flex;
+  box-shadow: 0 1.5rem 4rem rgba(black, $alpha: 0.15);
+  align-items: center;
+  text-align: left;
+  min-height: 20vh;
+}
+.card_box_3 {
+  background-color: #14a8dd;
+  width: 45%;
+  display: flex;
+  box-shadow: 0 1.5rem 4rem rgba(black, $alpha: 0.15);
+  align-items: center;
+  text-align: left;
+  min-height: 20vh;
+}
+.headingTertiary {
+  color: white;
+  margin-bottom: 1.3rem;
+  font-size: 1.8rem;
+}
+.textblock {
+  color: white;
+  width: 60%;
+  margin-left: 5%;
+}
+
+.block {
+  margin-left: 20%;
+}
+
+.box__text {
+  font-size: 1.3rem;
+  width: 60%;
+  line-height: 3rem;
+}
+.image {
+  color: white;
+}
+
+.card_box_icon {
+  color: white;
+  font-size: 2rem;
+}

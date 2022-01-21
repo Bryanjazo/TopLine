@@ -1,0 +1,61 @@
+.home_container {
+  width: 100%;
+}
+
+.home {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  &_logo {
+    flex: 1;
+    padding-left: 12.4%;
+  }
+}
+
+.socialIcons {
+  margin-right: 25rem;
+  align-items: right;
+
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      font-size: 1.4rem;
+      height: 100%;
+      padding: 4rem 9rem 5rem 9rem;
+
+      span {
+        align-items: center;
+        display: flex;
+        font-size: 1rem;
+      }
+      p {
+        align-items: right;
+        color: #777;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+.text {
+  font-size: 1.5rem;
+}
+.phone {
+  font-size: 1.8rem;
+  padding-left: 2.5rem;
+}
+
+.location {
+  align-items: flex-end;
+  padding-left: 1rem;
+}
+.icon {
+  color: #fc5058;
+  margin-right: 1rem;
+}
+
+.topText {
+  color: #003393;
+  letter-spacing: 0.2rem;
+}
