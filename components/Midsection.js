@@ -51,7 +51,7 @@ export default function Midsection() {
             Yardwork, we power wash concrete, patios, pool decks, driveways,
             homes, and more.
           </p>
-          <a href="#" className={styles.btn}>
+          <a href="tel:9097091148" className={styles.btn}>
             Call Today!
           </a>
         </div>

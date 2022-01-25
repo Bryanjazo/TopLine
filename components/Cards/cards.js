@@ -19,7 +19,7 @@ export default function cards() {
                   <li>Make your home new.</li>
                 </ul>
               </div>
-              <a href="#" className={styles.btn}>
+              <a href="tel:9097091148" className={styles.btn}>
                 Free quote!
               </a>
             </div>
@@ -39,7 +39,7 @@ export default function cards() {
                   <li>Remove algae and stains.</li>
                 </ul>
               </div>
-              <a href="#" className={styles.btn}>
+              <a href="tel:9097091148" className={styles.btn}>
                 Free quote!
               </a>
             </div>
@@ -61,7 +61,7 @@ export default function cards() {
                   <li>We do it right.</li>
                 </ul>
               </div>
-              <a href="#" className={styles.btn}>
+              <a href="tel:9097091148" className={styles.btn}>
                 Free quote!
               </a>
             </div>
@@ -83,7 +83,7 @@ export default function cards() {
                   <li>We make it easy.</li>
                 </ul>
               </div>
-              <a href="#" className={styles.btn}>
+              <a href="tel:9097091148" className={styles.btn}>
                 Free quote!
               </a>
             </div>

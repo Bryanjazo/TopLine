@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUsers,
   faFileInvoiceDollar,
+  faAirFreshener,
 } from "@fortawesome/free-solid-svg-icons";
 import pressureWasher from "../public/Images/pressure.png";
 export default function Headingcards() {
@@ -26,12 +27,10 @@ export default function Headingcards() {
       <div className={styles.card_box_2}>
         <div className={styles.block}>
           <div className={styles.image}>
-            <Image
-              src={pressureWasher}
-              alt="pressure"
-              width={80}
-              height={80}
-              className={styles.k}
+            <FontAwesomeIcon
+              icon={faAirFreshener}
+              className={styles.icon}
+              size="5x"
             />
           </div>
         </div>

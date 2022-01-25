@@ -40,15 +40,37 @@
 }
 .text {
   font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  padding-left: 3.5rem;
+  transition: 0.6s;
+}
+.text:hover {
+  color: #fc5058;
+  transition: ease-in;
 }
 .phone {
-  font-size: 1.8rem;
-  padding-left: 2.5rem;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  padding-left: 3.5rem;
+  transition: 0.6s;
+}
+.phone:hover {
+  color: #fc5058;
+  transition: ease-in;
 }
 
 .location {
-  align-items: flex-end;
-  padding-left: 1rem;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  padding-left: 3.5rem;
+  transition: 0.6s;
+}
+.location:hover {
+  color: #fc5058;
+  transition: ease-in;
 }
 .icon {
   color: #fc5058;

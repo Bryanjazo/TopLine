@@ -1,0 +1,267 @@
+@import "../variables.module.scss";
+@import "../clearfix.module.scss";
+.footerSection {
+  width: 100%;
+  background-color: #fc5058;
+  margin-top: 10rem;
+}
+
+.row {
+  width: 145rem;
+  display: flex;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+  @include clearfix;
+
+  [class^="col-"] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  .col_1_of_2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+}
+
+.emailSection {
+  padding: 4rem 0 4rem 0;
+  &_heading {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #003393;
+  }
+  &_paragraph {
+    max-width: 45%;
+    line-height: 1.8rem;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  &_input {
+    width: 25%;
+    height: 3rem;
+    background-color: transparent;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    &::placeholder {
+      padding-left: 4%;
+      color: #003393;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.optionSection {
+  display: flex;
+
+  padding: 4rem 0rem 4rem 0;
+  &_first {
+    margin-right: 10rem;
+    ul {
+      list-style: none;
+      li {
+      }
+    }
+  }
+
+  &_second {
+    margin-right: 10rem;
+    ul {
+      list-style: none;
+      li {
+      }
+    }
+  }
+  &_third {
+    ul {
+      list-style: none;
+      li {
+      }
+    }
+  }
+}
+.clockIcon {
+  color: white;
+  margin-right: 0.5rem;
+}
+.choices {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  li {
+    padding-bottom: 0.7rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+      transition: 0.5s;
+      &:hover {
+        transition: ease-in;
+        color: #003393;
+      }
+    }
+  }
+}
+.heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #003393;
+}
+
+.submit {
+  display: flex;
+}
+
+.btn {
+  background-color: #003393;
+  margin-left: 1.5rem;
+  margin-top: 0.55rem;
+  max-height: 3rem;
+  color: white;
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    display: inline-block;
+    border-radius: 3px;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.2rem;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &__animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBotton {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/// strip
+
+.strip {
+  width: 100%;
+
+  background-color: #003393;
+  &_row {
+    margin: 0 12%;
+    background-color: #003393;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &_copyright {
+    flex: 1;
+    align-items: left;
+    color: white;
+    font-size: 0.8rem;
+  }
+}
+
+.socialIcons {
+  margin-right: 27%;
+  align-items: right;
+
+  ul {
+    display: flex;
+    list-style: none;
+    li {
+      color: white;
+      font-size: 1.4rem;
+      height: 100%;
+      text-transform: uppercase;
+      padding: 1rem;
+    }
+  }
+}
+.icon:hover {
+  color: #fc5058;
+  cursor: pointer;
+  transition: ease-out;
+  transition: 0.3s;
+}

@@ -62,7 +62,6 @@ $default-font-size: 1.6rem;
   &__photo1 {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.4);
-
     position: absolute;
     z-index: 10;
     transition: all 0.2s;
@@ -263,15 +262,14 @@ $default-font-size: 1.6rem;
     content: "";
     position: absolute;
     top: 0;
-    left: -50.5rem;
+    left: -55.5rem;
     width: 50rem;
     height: 100%;
-
     background-color: rgba(255, 255, 255, 0.3);
-    transform: scaleX(-30deg);
+    transform: skew(-30deg);
     transition: 0.3s;
   }
   &:hover::before {
-    left: 60.5rem;
+    left: 65.5rem;
   }
 }

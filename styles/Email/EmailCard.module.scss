@@ -1,0 +1,207 @@
+@import "../variables.module.scss";
+
+.emailContainer {
+  margin: 8% 21% 0% 21%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.card {
+  border-radius: 5px;
+  background-color: #f7f7f7;
+
+  padding: 20px;
+
+  width: 100%;
+  box-shadow: 0 1.5rem 4rem rgba(black, 0.4);
+  &_contactText {
+    padding: 1rem;
+
+    p {
+      font-size: 1.3rem;
+
+      text-transform: uppercase;
+      color: #003393;
+      font-weight: 600;
+    }
+  }
+
+  &_infoText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1%;
+    &_email {
+      align-items: flex-start;
+    }
+    &_phone {
+      padding: 0 15%;
+    }
+    &_topic {
+    }
+  }
+}
+.label {
+  font-size: 1.2rem;
+  color: #003393;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.inpuText {
+  width: 100%;
+  padding: 0.8rem;
+  border: 0 solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.inpuText::placeholder {
+  color: #fc5058;
+}
+.inpuTextSelect {
+  width: 100%;
+  padding: 0.8rem;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.inpuTextSelect::selection {
+  color: #fc5058;
+}
+.message {
+  padding: 0 7.5%;
+}
+.inputMessage {
+  width: 100%;
+
+  border: 0px solid rgb(235, 235, 235);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+  &::placeholder {
+    color: #fc5058;
+  }
+}
+
+.button {
+  margin: 0 0 0 40%;
+}
+.btn {
+  background-color: #003393;
+
+  color: white;
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &__animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+.primary {
+  color: #fc5058;
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBotton {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

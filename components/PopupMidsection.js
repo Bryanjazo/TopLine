@@ -40,7 +40,7 @@ export default function popUpMidSection() {
             know about power washing before you decide to do it and we have laid
             out a few of those below.
           </p>
-          <a href="#" className={styles.btn}>
+          <a href="tel:9097091148" className={styles.btn}>
             Call Today!
           </a>
         </div>

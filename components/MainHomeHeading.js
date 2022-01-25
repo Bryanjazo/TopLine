@@ -13,7 +13,7 @@ export default function MainHomeHeading() {
             First time callers will now recieve 10% off on their first service.
           </span>
         </h1>
-        <a href="#" className={styles.btn}>
+        <a href="tel:9097091148" className={styles.btn}>
           Call Today!
         </a>
       </div>
