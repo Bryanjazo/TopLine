@@ -6,7 +6,10 @@ export default function EmailCard() {
       <div className={style.heading}>
         <h1 className={style.primary}>Contact Us Today!</h1>
       </div>
-      <form action="">
+      <form
+        action="https://formsubmit.co/Toplinepowerwash@gmail.com"
+        method="POST"
+      >
         <div className={style.card}>
           <div className={style.card_contactText}>
             <p>Contact</p>
@@ -21,6 +24,7 @@ export default function EmailCard() {
                 name="email"
                 className={style.inpuText}
                 placeholder="Enter E-mail..."
+                required
               />
             </div>
             <div className={style.card_infoText_phone}>
@@ -33,6 +37,7 @@ export default function EmailCard() {
                 name="phone"
                 className={style.inpuText}
                 placeholder="Enter phone number..."
+                required
               />
             </div>
             <div className={style.card_infoText_topic}>
@@ -40,7 +45,7 @@ export default function EmailCard() {
               <label htmlFor="topic" className={style.label}>
                 Topic
               </label>
-              <select name="topic" className={style.inpuTextSelect}>
+              <select name="topic" className={style.inpuTextSelect} required>
                 {" "}
                 <option value="Bundle Special ">Bundle Special</option>
                 <option value="Pressure Washing">Pressure Washing</option>
@@ -62,12 +67,13 @@ export default function EmailCard() {
               className={style.inputMessage}
               cols="25"
               rows="30"
+              required
             ></textarea>
           </div>
           <div className={style.button}>
-            <a href="" className={style.btn}>
+            <button type="submit" className={style.btn1}>
               Send Your Message
-            </a>
+            </button>
           </div>
         </div>
       </form>

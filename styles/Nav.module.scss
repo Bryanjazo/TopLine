@@ -62,3 +62,62 @@
   transition: ease-out;
   transition: 0.3s;
 }
+
+.hamburger {
+  color: white;
+  font-size: 4.6rem;
+
+  display: none;
+}
+
+.toggle {
+  display: none;
+}
+
+.menu {
+  a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 1.4rem;
+    height: 100%;
+    padding: 2rem 4rem;
+    clear: left;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  a:hover {
+    background-color: #fc5058;
+    transition: ease-out;
+    transition: 0.3s;
+  }
+}
+$small: 1300px;
+
+@media screen and (max-width: 1300px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    a {
+      display: block;
+      border-bottom: 1px solid #eaeaeb;
+      margin-bottom: 0;
+    }
+  }
+
+  .toggle:checked + .menu {
+    display: block;
+  }
+  .nav {
+    display: block;
+  }
+  .icon {
+    display: none;
+  }
+}
