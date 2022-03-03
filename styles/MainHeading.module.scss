@@ -177,3 +177,28 @@ $default-font-size: 1.6rem;
     transform: translate(0);
   }
 }
+
+@media screen and (max-width: 500px) {
+  .header_textBox {
+    position: absolute;
+    margin-left: 4rem;
+
+    text-align: left;
+  }
+  .heading_primary__main {
+    font-size: 3rem;
+  }
+  .heading_primary__sub {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  .container {
+    min-height: 68vh;
+  }
+}
+
+@media screen and (max-width: 698px) {
+  .header_textBox {
+    top: 70%;
+  }
+}
